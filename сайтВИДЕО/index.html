@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Для тебя, моя родная</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffe6f0;
+      color: #4a154b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-top: 177.78%; /* 9:16 ratio */
+      background: #fff0f5;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(214, 51, 132, 0.3);
+      margin-bottom: 25px;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 1.6;
+      background: #ffffffcc;
+      border-radius: 16px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(214, 51, 132, 0.1);
+    }
+
+    .text strong {
+      color: #d63384;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 40px;
+      }
+      .text {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Для тебя, моя родная</h1>
+
+    <div class="video-wrapper">
+      <video src="./video/kira.MOV" controls playsinline></video>
+    </div>
+
+    <div class="text">
+      В каждом кадре — наши улыбки, наши моменты, наша маленькая история.<br><br>
+      Это видео — кусочек той теплоты, которую ты каждый день даришь мне.<br><br>
+      Спасибо тебе за всё, что было, есть и будет между нами.<br><br>
+      <strong>Ты — не просто подруга, ты — мой человек.</strong><br><br>
+      Пусть этот подарок всегда напоминает, как сильно я тебя люблю 💛
+    </div>
+  </div>
+</body>
+</html>
